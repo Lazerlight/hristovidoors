@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Контакти</title>
+    <style>
+      :root {
+        --mainColor: rgb(123, 59, 2);
+        --secondaryColor: rgb(88, 35, 4);
+      }
+      .nav-container {
+        background-color: white;
+        border-radius: 10px;
+      }
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        transition: 1s;
+      }
+      .nav-links ul li:hover {
+        transform: rotate(15deg);
+        transition: 1s;
+      }
+      .nav-links ul li a:hover {
+        background-color: white;
+        color: var(--mainColor);
+        transition: 0.5s;
+      }
+
+      .nav-links ul li a {
+        color: white;
+        background-color: var(--mainColor);
+        text-decoration: solid;
+        font-weight: bold;
+        transition: 0.5s;
+        border-radius: 50px;
+        padding: 5px;
+      }
+      @media screen and (max-width: 1500px) {
+        .footer {
+          display: none;
+        }
+        .contact img {
+          top: 60%;
+          margin-top: 20px;
+        }
+        main {
+          background: linear-gradient(
+            to left,
+            var(--mainColor),
+            var(--secondaryColor)
+          );
+        }
+      }
+      @media screen and (max-width: 750px) {
+        .nav-links ul {
+        }
+        main {
+          height: 1200px;
+        }
+        .contact img {
+          top: 60%;
+          height: 40vh;
+          width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Body element -->
+    <body>
+      <!-- Main part of the page -->
+      <main>
+        <!-- Navigation bar element -->
+        <div class="nav-container">
+          <nav>
+            <div class="logo"><img src="./logo.png" alt="Logo Image" /></div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="./index.html">Начална страница</a></li>
+                <li><a href="./contacts.html">Контакти</a></li>
+                <li><a href="#">Врати</a></li>
+                <li><a href="#">Поръчай</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- Contacts element -->
+        <div class="contacts">
+          <div class="contact"></div>
+          <div class="contact"><img src="./contactsImg.jpg" alt="" /></div>
+        </div>
+      </main>
+      <div class="footer"></div>
+      <!-- Linking JS scripts -->
+      <script src="./script.js"></script>
+    </body>
+  </body>
+</html>
